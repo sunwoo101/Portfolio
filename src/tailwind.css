@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+    --color-palette-text: oklch(100.00% 0.000 89.88);
+    --color-palette-background: oklch(0.00% 0.000 0.00);
+    --color-palette-primary: oklch(82.45% 0.033 221.36);
+    --color-palette-secondary: oklch(28.31% 0.029 281.56);
+    --color-palette-accent: oklch(49.39% 0.062 16.70);
+}
