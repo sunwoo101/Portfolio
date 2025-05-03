@@ -3,10 +3,10 @@ import NavElement from "./NavElement";
 function NavBar() {
     return (
         <header>
-            <nav className="flex fixed top-10 left-0 w-full justify-center">
+            <nav className="flex w-max mx-auto left-0 right-0 fixed top-10 w-full justify-center hidden sm:block">
                 <div className="flex justify-center bg-white/5 border-white/50 backdrop-blur-sm shadow-sm shadow-white/60 border p-4 rounded-[10px]">
                     <NavElement text="Intro" link="#intro" />
-                    <NavElement text="About Me" link="#about-me" />
+                    <NavElement text="About" link="#about" />
                     <NavElement text="Projects" />
                     <NavElement text="Clients" />
                 </div>
