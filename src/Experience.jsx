@@ -3,8 +3,9 @@ import Job from "./Job";
 const jobs = [
     {
         name: 'Eggsterant',
-        date: '01/23 - 03/25',
+        position: 'Software Engineer',
         location: 'Remote',
+        date: 'Jan 2023 - Mar 2025',
         description: 'Developed multiple subscription-based Windows tools, including Eggsterant V3, and private software leveraging Arduino to inject hardware-level input.',
         stack: [
             'WinForms', 'C#', 'C++', 'JavaScript', 'Arduino'
@@ -13,8 +14,9 @@ const jobs = [
     },
     {
         name: 'TIDE Solution',
-        date: '09/24 - 12/24',
+        position: 'IT Support Intern',
         location: 'Dubai, UAE',
+        date: 'Sep 2024 - Dec 2024',
         description: 'Developed the company website using Wix and custom HTML, built internal software tools with features like one-click network drive access, and set up and maintained attendance machines across multiple project sites.',
         stack: [
             'WinForms', 'C#', 'HTML',

@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-    --color-palette-text: oklch(100.00% 0.000 89.88);
-    --color-palette-background: oklch(0.00% 0.000 0.00);
-    --color-palette-primary: oklch(23.08% 0.000 89.88);
-    --color-palette-secondary: oklch(49.26% 0.000 89.88);
-    --color-palette-accent: oklch(53.78% 0.084 63.77);
+    --color-palette-text: rgb(255, 255, 255);
+    --color-palette-background: rgb(0, 0, 0);
+    --color-palette-primary: rgb(29, 29, 29);
+    --color-palette-secondary: rgb(97, 97, 97);
+    --color-palette-accent: rgb(144, 99, 55);
+    --color-palette-border-glow: rgb(255, 0, 0);
 }
-
