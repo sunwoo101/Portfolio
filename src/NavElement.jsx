@@ -1,12 +1,6 @@
-function changeColour() {
-
-  document.documentElement.style.setProperty('--color-palette-border-glow', 'rgb(0, 255, 0)');
-}
-
 function NavElement({ text = 'Default', link = '' }) {
     return (
         <a
-            onClick={changeColour}
             href={link}
             className="
                 text-palette-text
