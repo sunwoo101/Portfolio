@@ -6,7 +6,6 @@ import Projects from './Projects';
 import Contact from './Contact';
 import Footer from './Footer';
 import ThemePicker from './ThemePicker';
-import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
@@ -18,7 +17,6 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
-      <Analytics/>
     </>
   );
 }
