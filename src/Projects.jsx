@@ -13,7 +13,7 @@ const projects = [
         link: 'https://uni-connect.vip/',
         source: 'https://github.com/sunwoo101/Uni-Connect',
         stack: [
-            'ASP.NET Core', 'C#', 'JavaScript', 'Tailwind', 'CSS'
+            'ASP.NET Core', 'C#', 'JavaScript', 'Tailwind', 'HTML'
         ],
     },
     {
