@@ -41,15 +41,19 @@ const projects = [
 
 function Projects() {
     return (
-        <section id="projects" className="w-full flex flex-col justify-center items-center leading-none">
+        <section aria-labelledby="projects-heading" aria-label="Project showcase section" id="projects" className="w-full flex flex-col justify-center items-center leading-none">
             <div className="mx-6 sm:w-xl mt-10 sm:mt-30">
-                <h2 className="text-palette-text text-4xl mb-4 leading-none">Projects</h2>
-                <div className="flex flex-wrap gap-4"> {
+                <h2 id="projects-heading" className="text-palette-text text-4xl mb-4 leading-none">Projects</h2>
+                <ul aria-label="List of projects" className="flex flex-wrap gap-4 list-none p-0 m-0"> {
                     projects.map((project, index) => {
-                        return <Project key={index} project={project} />
+                        return (
+                            <li key={index} className="w-full sm:w-auto">
+                                <Project project={project} index={index} />
+                            </li>
+                        )
                     })
                 }
-                </div>
+                </ul>
             </div>
         </section>
     );

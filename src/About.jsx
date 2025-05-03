@@ -20,33 +20,41 @@ const education = [
 
 function About() {
     return (
-        <section id="about" className="w-full flex flex-col justify-center items-center leading-none">
+        <section aria-labelledby="about-heading" id="about" className="w-full flex flex-col justify-center items-center leading-none">
             <div className="mx-6 sm:w-xl mt-10 sm:mt-30">
-                <h2 className="text-palette-text text-4xl mb-4 leading-none">About</h2>
+                <h2 id="about-heading" className="text-palette-text text-4xl mb-4 leading-none">About</h2>
                 <div className="bg-palette-secondary/20 border border-palette-secondary shadow-md shadow-palette-border-glow/60 rounded-[10px] w-full flex flex-col justify-center items-center py-5 px-5 gap-10">
                     <div className="w-full">
                         <h3 className="text-palette-text text-2xl mb-2 leading-none">Me</h3>
-                        <p className="text-palette-text">I'm Sun, a software engineer based in Sydney. I like to work on side projects in my free time.</p>
+                        <p className="text-palette-text">I'm Sun, a software engineer based in Sydney, Australia, specialising in .NET and React &mdash; I like to work on side projects in my free time.</p>
                     </div>
 
                     <div className="w-full">
                         <h3 className="text-palette-text text-2xl mb-2 leading-none">Skills</h3>
-                        <div className="flex flex-wrap gap-2"> {
+                        <ul aria-label="Technology stack" className="flex flex-wrap gap-2 list-none p-0 m-0"> {
                             skills.map((skill, index) => {
-                                return <SkillTag key={index} text={skill} />
+                                return (
+                                    <li key={index}>
+                                        <SkillTag text={skill} />
+                                    </li>
+                                )
                             })
                         }
-                        </div>
+                        </ul>
                     </div>
 
                     <div className="w-full">
                         <h3 className="text-palette-text text-2xl mb-2 leading-none">Education</h3>
-                        <div className="flex flex-wrap gap-2"> {
+                        <ul className="flex flex-wrap gap-2 list-none p-0 m-0"> {
                             education.map((education, index) => {
-                                return <EducationTag key={index} education={education} />
+                                return (
+                                    <li key={index}>
+                                        <EducationTag education={education} />
+                                    </li>
+                                )
                             })
                         }
-                        </div>
+                        </ul>
                     </div>
                 </div>
             </div>

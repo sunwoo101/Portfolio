@@ -8,7 +8,7 @@ const jobs = [
         date: 'Jan 2023 - Mar 2025',
         description: 'Developed multiple subscription-based Windows tools, including Eggsterant V3, and private software leveraging Arduino to inject hardware-level input.',
         stack: [
-            'WinForms', 'C#', 'C++', 'JavaScript', 'Arduino'
+            'WinForms', 'C#', 'C++', 'JavaScript', 'Arduino',
         ],
         link: 'https://www.eggsterant.net/',
     },
@@ -27,15 +27,19 @@ const jobs = [
 
 function Experience() {
     return (
-        <section id="experience" className="w-full flex flex-col justify-center items-center leading-none">
+        <section aria-labelledby="experience-heading" aria-label="Work experience" id="experience" className="w-full flex flex-col justify-center items-center leading-none">
             <div className="mx-6 sm:w-xl mt-10 sm:mt-30">
-                <h2 className="text-palette-text text-4xl mb-4 leading-none">Experience</h2>
-                <div className="flex flex-wrap gap-4"> {
+                <h2 id="experience-heading" className="text-palette-text text-4xl mb-4 leading-none">Experience</h2>
+                <ul aria-label="List of work experience" className="flex flex-wrap gap-4 list-none p-0 m-0"> {
                     jobs.map((job, index) => {
-                        return <Job key={index} job={job} />
+                        return (
+                            <li key={index} role="listitem" className="w-full sm:w-auto">
+                                <Job job={job} index={index} />
+                            </li>
+                        )
                     })
                 }
-                </div>
+                </ul>
             </div>
         </section>
     );

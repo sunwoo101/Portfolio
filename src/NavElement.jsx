@@ -10,6 +10,7 @@ function NavElement({ text = 'Default', link = '' }) {
                 hover:text-shadow-lg
                 hover:text-shadow-palette-border-glow/50
             "
+            aria-label={`Navigate to ${text} section`}
         >
             {text}
         </a>
