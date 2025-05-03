@@ -1,0 +1,58 @@
+import Project from './Project';
+
+import uniConnect from './assets/uni-connect.vip.png';
+import eggsterant from './assets/eggsterant.png';
+import tradingIndicator from './assets/trading-indicator.png';
+
+const projects = [
+    {
+        name: 'Uni Connect',
+        date: '03/25 - 05/25',
+        imageLink: uniConnect,
+        description: 'An open-source, fully functional forum for students with a clean, user-friendly interface. Users can post text, images, videos, and events, as well as like, save posts, and edit their profiles.',
+        link: 'https://uni-connect.vip/',
+        source: 'https://github.com/sunwoo101/Uni-Connect',
+        stack: [
+            'ASP.NET Core', 'C#', 'JavaScript', 'Tailwind', 'CSS'
+        ],
+    },
+    {
+        name: 'Eggsterant V3',
+        date: '08/24 - 09/24',
+        imageLink: eggsterant,
+        description: 'A subscription-based Windows tool that automatically clicks characters detected by a color-outline recognition algorithm, used by over 500 users.',
+        link: 'https://www.eggsterant.net/',
+        stack: [
+            'WinForms', 'C#', 'C++',
+        ],
+    },
+    {
+        name: 'Trading Indicator',
+        date: '07/23 - 09/23',
+        imageLink: tradingIndicator,
+        description: 'An open-source TradingView indicator with over 70,000 views that identifies Smart Money Concept (SMC) levels and sends real-time webhook alerts when key price levels are reached.',
+        link: 'https://www.tradingview.com/script/gqiG3j3a-SMC-Indicator-With-Webhook/',
+        source: 'https://www.tradingview.com/script/gqiG3j3a-SMC-Indicator-With-Webhook/',
+        stack: [
+            'Pine Script'
+        ],
+    },
+];
+
+function Projects() {
+    return (
+        <section id="projects" className="w-full flex flex-col justify-center items-center leading-none">
+            <div className="mx-6 sm:w-xl mt-10 sm:mt-30">
+                <h2 className="text-palette-text text-4xl mb-4 leading-none">Projects</h2>
+                <div className="flex flex-wrap gap-4"> {
+                    projects.map((project, index) => {
+                        return <Project key={index} project={project} />
+                    })
+                }
+                </div>
+            </div>
+        </section>
+    );
+}
+
+export default Projects;

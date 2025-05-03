@@ -1,10 +1,16 @@
-function EducationTag({education}) {
+function EducationTag({ education }) {
     return (
-        <span className="text-palette-text bg-palette-primary px-2 py-1 border border-palette-accent rounded-[6px] w-full hover:-translate-y-1 transition duration-200 ease-in-out select-none">
-            <strong>{education.degree}</strong><br />
-            {education.uni}<br />
-            {education.graduation}
-        </span>
+        <div className="flex flex-col gap-1 text-palette-text bg-palette-primary px-2 py-2 border border-palette-secondary rounded-[6px] w-full hover:-translate-y-1 transition duration-200 ease-in-out select-none">
+            <span>
+                <strong>{education.degree}</strong>
+            </span>
+            <span>
+                {education.uni}
+            </span>
+            <span>
+                {education.graduation}
+            </span>
+        </div>
     );
 }
 

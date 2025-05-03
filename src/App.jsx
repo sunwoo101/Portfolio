@@ -1,14 +1,19 @@
 import NavBar from './NavBar';
-import Intro from './Intro';
+import Home from './Home';
 import About from './About';
+import Experience from './Experience';
+import Projects from './Projects';
+import Contact from './Contact';
 
 function App() {
   return (
     <>
       <NavBar />
-      <Intro />
+      <Home />
       <About />
-      <div className="mb-500"></div>
+      <Experience />
+      <Projects />
+      <Contact />
     </>
   );
 }
