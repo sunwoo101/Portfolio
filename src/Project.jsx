@@ -12,7 +12,7 @@ function Project({ project }) {
 
                     <div style={{ backgroundImage: `url(${project.imageLink})` }} className={`w-full h-[300px] bg-cover bg-center bg-no-repeat flex items-center justify-center rounded-[10px]`}>
                         <div className="w-full h-full backdrop-blur-xs hover:backdrop-blur-none group bg-palette-background/80 hover:bg-palette-background/0 transition duration-300 rounded-[10px] p-4">
-                            <p className="text-palette-text text-sm leading-relaxed group-hover:text-palette-text/0 transition duration-300">{project.description}</p>
+                            <p className="text-palette-text text-sm leading-relaxed group-hover:text-palette-text/0 transition duration-300 select-none">{project.description}</p>
                         </div>
                     </div>
 
