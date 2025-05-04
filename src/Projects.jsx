@@ -20,7 +20,7 @@ const projects = [
         name: 'Eggsterant V3',
         date: 'Aug 2024 - Sep 2024',
         imageLink: eggsterant,
-        description: 'A subscription-based Windows tool that automatically clicks characters detected by a color-outline recognition algorithm, used by over 500 users.',
+        description: 'A subscription-based Windows tool that automatically clicks characters detected by a color-outline recognition algorithm, used by over 1,000 customers.',
         link: 'https://www.eggsterant.net/',
         stack: [
             'WinForms', 'C#', 'C++',
