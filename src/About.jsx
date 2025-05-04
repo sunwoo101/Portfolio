@@ -25,8 +25,8 @@ function About() {
                 <h2 id="about-heading" className="text-palette-text text-4xl mb-4 leading-none">About</h2>
                 <div className="bg-palette-secondary/20 border border-palette-secondary shadow-md shadow-palette-border-glow/60 rounded-[10px] w-full flex flex-col justify-center items-center py-5 px-5 gap-10">
                     <div className="w-full">
-                        <h3 className="text-palette-text text-2xl mb-2 leading-none">Me</h3>
-                        <p className="text-palette-text">I'm Sun, a software engineer based in Sydney, Australia, specialising in .NET and React &mdash; I like to work on side projects in my free time.</p>
+                        <h3 className="text-palette-text text-2xl mb-2 leading-none">Intro</h3>
+                        <p className="text-palette-text">Hi, I'm Sun &mdash; a 21-year-old software engineer in Sydney, Australia. I specialize in .NET and React, and love creating side projects for fun and learning.</p>
                     </div>
 
                     <div className="w-full">

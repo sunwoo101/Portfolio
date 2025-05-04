@@ -30,13 +30,13 @@ function Project({ project, index }) {
                     <div className="flex flex-wrap gap-2">
                         {
                             project.link &&
-                            <a aria-label={`Visit ${project.name} website`} href={project.link} target="_blank" rel="noopener noreferrer" className="text-palette-text px-2 py-2 bg-palette-secondary/50 hover:bg-palette-primary border border-palette-secondary shadow-md shadow-palette-border-glow/60 rounded-[6px] transition duration-200 ease-in-out select-none leading-none">
+                            <a aria-label={`Visit ${project.name} website`} href={project.link} target="_blank" rel="noopener noreferrer" className="text-palette-text px-2 py-2 bg-palette-primary hover:bg-palette-secondary/50 border border-palette-secondary shadow-md shadow-palette-border-glow/60 rounded-[6px] transition duration-200 ease-in-out select-none leading-none">
                                 Website
                             </a>
                         }
                         {
                             project.source &&
-                            <a aria-label={`View source code for ${project.name}`} href={project.source} target="_blank" rel="noopener noreferrer" className="text-palette-text px-2 py-2 bg-palette-secondary/50 hover:bg-palette-primary border border-palette-secondary shadow-md shadow-palette-border-glow/60 rounded-[6px] transition duration-200 ease-in-out select-none leading-none">
+                            <a aria-label={`View source code for ${project.name}`} href={project.source} target="_blank" rel="noopener noreferrer" className="text-palette-text px-2 py-2 bg-palette-primary hover:bg-palette-secondary/50 border border-palette-secondary shadow-md shadow-palette-border-glow/60 rounded-[6px] transition duration-200 ease-in-out select-none leading-none">
                                 Source
                             </a>
                         }

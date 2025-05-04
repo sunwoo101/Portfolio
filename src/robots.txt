@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://portfolio-kappa-rust-87.vercel.app/sitemap.xml
+Sitemap: https://sunwookim.dev/sitemap.xml

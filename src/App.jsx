@@ -7,20 +7,30 @@ import Contact from './Contact';
 import Footer from './Footer';
 import ThemePicker from './ThemePicker';
 
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import NotFound from './NotFound';
+
 function App() {
-  return (
-    <>
-      <NavBar />
-      <main>
-        <Home />
-        <About />
-        <Experience />
-        <Projects />
-        <Contact />
-      </main>
-      <Footer />
-    </>
-  );
+    return (
+        <Router>
+            <NavBar />
+            <main>
+                <Routes>
+                    <Route path="/" element={
+                        <>
+                            <Home />
+                            <About />
+                            <Experience />
+                            <Projects />
+                            <Contact />
+                        </>
+                    } />
+                    <Route path="*" element={<NotFound />} />
+                </Routes>
+            </main>
+            <Footer />
+        </Router>
+    );
 }
 
 export default App;

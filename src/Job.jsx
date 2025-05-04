@@ -30,7 +30,7 @@ function Job({ job, index }) {
                     {
                         job.link &&
                         <div className="flex flex-wrap gap-2">
-                            <a aria-label={`Visit ${job.name} website`}  href={job.link} target="_blank" rel="noopener noreferrer" className="text-palette-text px-2 py-2 bg-palette-secondary/50 hover:bg-palette-primary border border-palette-secondary shadow-md shadow-palette-border-glow/60 rounded-[6px] transition duration-200 ease-in-out select-none leading-none">
+                            <a aria-label={`Visit ${job.name} website`}  href={job.link} target="_blank" rel="noopener noreferrer" className="text-palette-text px-2 py-2 bg-palette-primary hover:bg-palette-secondary/50 border border-palette-secondary shadow-md shadow-palette-border-glow/60 rounded-[6px] transition duration-200 ease-in-out select-none leading-none">
                                 Website
                             </a>
                         </div>
