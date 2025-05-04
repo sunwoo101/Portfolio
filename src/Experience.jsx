@@ -6,7 +6,7 @@ const jobs = [
         position: 'Software Engineer',
         location: 'Remote',
         date: 'Jan 2023 — Mar 2025',
-        description: 'Developed multiple subscription-based Windows tools, including Eggsterant V3, and private software leveraging Arduino to inject hardware-level input.',
+        description: 'Developed multiple subscription-based game assist tools, including Eggsterant V3, and private software leveraging Arduino to inject hardware-level input.',
         stack: [
             'WinForms', 'C#', 'C++', 'JavaScript', 'Arduino',
         ],
