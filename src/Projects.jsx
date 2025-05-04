@@ -7,7 +7,7 @@ import tradingIndicator from './assets/trading-indicator.png';
 const projects = [
     {
         name: 'Uni Connect',
-        date: 'Mar 2025 - May 2025',
+        date: 'Mar 2025 — May 2025',
         imageLink: uniConnect,
         description: 'An open-source, fully functional forum for students with a clean, user-friendly interface. Users can post text, images, videos, and events, as well as like, save posts, and edit their profiles.',
         link: 'https://uni-connect.vip/',
@@ -18,7 +18,7 @@ const projects = [
     },
     {
         name: 'Eggsterant V3',
-        date: 'Aug 2024 - Sep 2024',
+        date: 'Aug 2024 — Sep 2024',
         imageLink: eggsterant,
         description: 'A subscription-based Windows tool that automatically clicks characters detected by a color-outline recognition algorithm, used by over 1,000 customers.',
         link: 'https://www.eggsterant.net/',
@@ -28,7 +28,7 @@ const projects = [
     },
     {
         name: 'Trading Indicator',
-        date: 'Jul 2024 - Sep 2024',
+        date: 'Jul 2024 — Sep 2024',
         imageLink: tradingIndicator,
         description: 'An open-source TradingView indicator with over 70,000 views that identifies Smart Money Concept (SMC) levels and sends real-time webhook alerts when key price levels are reached.',
         link: 'https://www.tradingview.com/script/gqiG3j3a-SMC-Indicator-With-Webhook/',

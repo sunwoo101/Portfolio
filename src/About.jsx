@@ -2,19 +2,19 @@ import SkillTag from "./SkillTag";
 import EducationTag from "./EducationTag";
 
 const skills = [
-    'React', 'Tailwind', 'ASP.NET Core', 'WinForms', 'Python', 'C#', 'C++', 'JavaScript', 'CSS', 'HTML', 'Pine Script'
+    'ASP.NET Core', 'React', 'Tailwind', 'WinForms', 'C#', 'JavaScript', 'Python', 'C++', 'CSS', 'HTML', 'Pine Script'
 ];
 
 const education = [
     {
         degree: 'Diploma of Information Technology',
         uni: 'UTS College',
-        graduation: '03/25 - 12/25',
+        graduation: 'Mar 2025 — Dec 2025',
     },
     {
         degree: 'Certificate IV in Information Technology',
         uni: 'TAFE NSW',
-        graduation: '02/24 - 06/24',
+        graduation: 'Feb 2024 — Jun 2024',
     },
 ];
 
@@ -26,7 +26,7 @@ function About() {
                 <div className="bg-palette-secondary/20 border border-palette-secondary shadow-md shadow-palette-border-glow/60 rounded-[10px] w-full flex flex-col justify-center items-center py-5 px-5 gap-10">
                     <div className="w-full">
                         <h3 className="text-palette-text text-2xl mb-2 leading-none">Intro</h3>
-                        <p className="text-palette-text">Hi, I'm Sun &mdash; a 21-year-old software engineer in Sydney, Australia. I specialize in .NET and React, and love creating side projects for fun and learning.</p>
+                        <p className="text-palette-text leading-relaxed">Hi, I'm Sun &mdash; a 21-year-old software engineer in Sydney, Australia. I specialize in .NET and React, and love creating side projects for fun and learning.</p>
                     </div>
 
                     <div className="w-full">
