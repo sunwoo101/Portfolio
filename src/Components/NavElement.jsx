@@ -6,7 +6,7 @@ function NavElement({ text = 'Default', link = '' }) {
                 text-palette-text
                 mx-4
                 hover:cursor-pointer
-                transition-[text-shadow] duration-200
+                transition-[text-shadow] duration-300
                 hover:text-shadow-lg
                 hover:text-shadow-palette-border-glow/50
             "

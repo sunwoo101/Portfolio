@@ -1,4 +1,4 @@
-import Job from "./Job";
+import Job from "../Components/Job";
 
 const jobs = [
     {

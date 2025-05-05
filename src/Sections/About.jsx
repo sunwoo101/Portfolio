@@ -1,5 +1,5 @@
-import SkillTag from "./SkillTag";
-import EducationTag from "./EducationTag";
+import SkillTag from "../Components/SkillTag";
+import EducationTag from "../Components/EducationTag";
 
 const skills = [
     'ASP.NET Core', 'React', 'Tailwind', 'WinForms', 'C#', 'JavaScript', 'Python', 'C++', 'CSS', 'HTML', 'Pine Script'

@@ -1,4 +1,4 @@
-import NavElement from "./NavElement";
+import NavElement from "./Components/NavElement";
 
 function NavBar() {
     return (

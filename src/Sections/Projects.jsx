@@ -1,8 +1,8 @@
-import Project from './Project';
+import Project from '../Components/Project';
 
-import uniConnect from './assets/uni-connect.vip.png';
-import eggsterant from './assets/eggsterant.png';
-import tradingIndicator from './assets/trading-indicator.png';
+import uniConnect from '../assets/uni-connect.vip.png';
+import eggsterant from '../assets/eggsterant.png';
+import tradingIndicator from '../assets/trading-indicator.png';
 
 const projects = [
     {

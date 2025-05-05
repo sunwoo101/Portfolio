@@ -1,9 +1,9 @@
 import NavBar from './NavBar';
 import Home from './Home';
-import About from './About';
-import Experience from './Experience';
-import Projects from './Projects';
-import Contact from './Contact';
+import About from './Sections/About';
+import Experience from './Sections/Experience';
+import Projects from './Sections/Projects';
+import Contact from './Sections/Contact';
 import Footer from './Footer';
 import ThemePicker from './ThemePicker';
 
