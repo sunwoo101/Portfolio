@@ -48,7 +48,7 @@ function About() {
                         <ul className="flex flex-wrap gap-2 list-none p-0 m-0"> {
                             education.map((education, index) => {
                                 return (
-                                    <li key={index}>
+                                    <li key={index} className="w-full">
                                         <EducationTag education={education} />
                                     </li>
                                 )
