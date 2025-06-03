@@ -7,9 +7,14 @@ const skills = [
 
 const education = [
     {
+        degree: 'Bachelor of Information Technology (Enterprise Software Development)',
+        uni: 'UTS',
+        graduation: 'Jul 2025 — Dec 2027',
+    },
+    {
         degree: 'Diploma of Information Technology',
         uni: 'UTS College',
-        graduation: 'Mar 2025 — Dec 2025',
+        graduation: 'Mar 2025 — May 2025',
     },
     {
         degree: 'Certificate IV in Information Technology',
