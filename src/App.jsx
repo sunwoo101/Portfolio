@@ -5,6 +5,7 @@ import Experience from './Sections/Experience';
 import Projects from './Sections/Projects';
 import Contact from './Sections/Contact';
 import Footer from './Footer';
+import Contributions from './Sections/Contributions';
 import ThemePicker from './ThemePicker';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -22,6 +23,7 @@ function App() {
                             <About />
                             <Experience />
                             <Projects />
+                            <Contributions />
                             <Contact />
                         </>
                     } />
