@@ -6,7 +6,7 @@ function Contact() {
                 <div className="bg-palette-secondary/20 border border-palette-text/50 shadow-md shadow-palette-border-glow/60 rounded-[10px] w-full flex flex-col justify-center items-center py-5 px-5">
                     <div className="flex flex-col w-full gap-4">
                         <p className="text-palette-text text-center text-sm leading-relaxed">
-                            I'm available for full-time roles in Sydney, Australia, freelance work, or simply to connect.
+                            I'm available for internships and part-time roles in Sydney, Australia, freelance work, or simply to connect.
                         </p>
 
                         <div className="flex flex-col gap-4">
