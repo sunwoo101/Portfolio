@@ -30,7 +30,7 @@ const projects = [
         name: 'Trading Indicator',
         date: 'Jul 2024 — Sep 2024',
         imageLink: tradingIndicator,
-        description: 'An open-source TradingView indicator with over 70,000 views that identifies Smart Money Concept (SMC) levels and sends real-time webhook alerts when key price levels are reached.',
+        description: 'An open-source TradingView indicator with over 80,000 views that identifies Smart Money Concept (SMC) levels and sends real-time webhook alerts when key price levels are reached.',
         link: 'https://www.tradingview.com/script/gqiG3j3a-SMC-Indicator-With-Webhook/',
         source: 'https://www.tradingview.com/script/gqiG3j3a-SMC-Indicator-With-Webhook/',
         stack: [
