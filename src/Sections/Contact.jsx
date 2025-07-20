@@ -1,6 +1,6 @@
 function Contact() {
     return (
-        <section aria-labelledby="contact-heading" id="contact" className="w-full flex flex-col justify-center items-center mb-36 leading-none">
+        <section aria-labelledby="contact-heading" id="contact" className="min-w-full flex flex-col justify-center items-center mb-36 leading-none">
             <div className="mx-6 sm:w-xl mt-10 sm:mt-30">
                 <h2 id="contact-heading" className="text-palette-text text-4xl mb-4 leading-none">Contact</h2>
                 <div className="bg-palette-secondary/20 border border-palette-text/50 shadow-md shadow-palette-border-glow/60 rounded-[10px] w-full flex flex-col justify-center items-center py-5 px-5">

@@ -9,12 +9,12 @@ const education = [
     {
         degree: 'Bachelor of Information Technology (Enterprise Software Development)',
         uni: 'UTS',
-        graduation: 'Jul 2025 — Dec 2027',
+        graduation: 'Jul 2025 — Dec 2027 • Expected',
     },
     {
         degree: 'Diploma of Information Technology',
         uni: 'UTS College',
-        graduation: 'Mar 2025 — May 2025',
+        graduation: 'Mar 2025 — May 2025 • Withdrawn (Transfer to UTS)',
     },
     {
         degree: 'Certificate IV in Information Technology',
@@ -53,7 +53,7 @@ function About() {
                         <ul className="flex flex-wrap gap-2 list-none p-0 m-0"> {
                             education.map((education, index) => {
                                 return (
-                                    <li key={index} className="w-full">
+                                    <li key={index} className="min-w-full">
                                         <EducationTag education={education} />
                                     </li>
                                 )

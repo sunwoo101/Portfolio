@@ -33,7 +33,7 @@ function Experience() {
                 <ul aria-label="List of work experience" className="flex flex-wrap gap-4 list-none p-0 m-0"> {
                     jobs.map((job, index) => {
                         return (
-                            <li key={index} role="listitem" className="w-full sm:w-auto">
+                            <li key={index} role="listitem" className="min-w-full sm:w-auto">
                                 <Job job={job} index={index} />
                             </li>
                         )

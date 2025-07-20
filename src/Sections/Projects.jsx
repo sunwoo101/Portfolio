@@ -47,7 +47,7 @@ function Projects() {
                 <ul aria-label="List of projects" className="flex flex-wrap gap-4 list-none p-0 m-0"> {
                     projects.map((project, index) => {
                         return (
-                            <li key={index} className="w-full sm:w-auto">
+                            <li key={index} className="min-w-full sm:w-auto">
                                 <Project project={project} index={index} />
                             </li>
                         )
