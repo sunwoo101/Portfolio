@@ -37,6 +37,47 @@ const projects = [
             'Pine Script'
         ],
     },
+    {
+        name: 'Eggsterant Private',
+        date: 'Jun 2025 — Jul 2025',
+        link: 'https://www.eggsterant.net/',
+        stack: [
+            'WinForms', 'C#', 'C++',
+        ],
+    },
+    {
+        name: 'Arch Linux Dotfiles',
+        date: 'Jul 2025',
+        source: 'https://github.com/sunwoo101/dotfiles',
+        stack: [
+            'CSS', 'Bash',
+        ],
+    },
+    {
+        name: 'SSH Client',
+        date: 'Oct 2020 — Sep 2021',
+        source: 'https://github.com/sunwoo101/SSH-Client-V2',
+        stack: [
+            'Python',
+        ],
+    },
+    {
+        name: 'FX Journal',
+        date: 'Oct 2023',
+        source: 'https://github.com/sunwoo101/FxJournal',
+        stack: [
+            'C#', 'WinForms',
+        ],
+    },
+    {
+        name: 'Simple RPG',
+        date: 'Jul 2024 - Aug 2024',
+        source: 'https://github.com/sunwoo101/3D-Simple-RPG',
+        stack: [
+            'C#', 'Unity',
+        ],
+    },
+
 ];
 
 function Projects() {
