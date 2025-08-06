@@ -9,7 +9,7 @@ function Contribution({ contribution, index }) {
                         <h3 id={`project-title-${index}`} className="text-palette-text text-2xl leading-none">{contribution.name}</h3>
                     </div>
 
-                    <p className="text-palette-text text-sm leading-relaxed group-hover:opacity-0 transition duration-300 cursor-default select-none">{contribution.description}</p>
+                    <p className="text-palette-text text-sm leading-relaxed p-4">{contribution.description}</p>
 
                     <ul aria-label="Technology stack" className="flex flex-wrap gap-2 list-none p-0 m-0"> {
                         contribution.stack.map((tech, stackIndex) => {

@@ -3,12 +3,12 @@ import Job from "../Components/Job";
 const jobs = [
     {
         name: 'Eggsterant',
-        position: 'Software Engineer',
-        location: 'Remote',
-        date: 'Jun 2022 — Mar 2025',
-        description: 'Developed multiple subscription-based game assist tools, including Eggsterant V3, and private software leveraging Arduino to inject hardware-level input.',
+        position: 'Senior Full-Stack Software Engineer',
+        location: 'Sydney, Australia (Remote)',
+        date: 'Jun 2022 — Present',
+        description: 'Built a full-stack platform with React and ASP.NET Core for 1,500+ users, featuring secure auth, license management, and obfuscated executables. Developed WinForms input tools, managed CI/CD on a VPS, and led remote support to improve onboarding and operations.',
         stack: [
-            'WinForms', 'C#', 'C++', 'JavaScript', 'Arduino',
+            'C#', 'Python', 'JavaScript', 'ASP.NET Core', 'EF Core', 'PostgreSQL', 'WinForms', 'React', 'Tailwind',
         ],
         link: 'https://www.eggsterant.net/',
     },
@@ -17,9 +17,9 @@ const jobs = [
         position: 'IT Support Intern',
         location: 'Dubai, UAE',
         date: 'Sep 2024 — Dec 2024',
-        description: 'Developed the company website using Wix and custom HTML, built internal software tools with features like one-click network drive access, and set up and maintained attendance machines across multiple project sites.',
+        description: 'IT Support Intern assisting 30+ staff with tech issues, automating setup tasks via a C# WinForms tool, and redesigning the company website with Wix and custom HTML. Maintained attendance systems and supported internal operations.',
         stack: [
-            'WinForms', 'C#', 'HTML',
+            'C#', 'WinForms', 'HTML',
         ],
         link: 'https://www.tidesolution.com/',
     },

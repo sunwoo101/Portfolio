@@ -1,16 +1,24 @@
 import Project from '../Components/Project';
 
 import uniConnect from '../assets/uni-connect.vip.png';
-import eggsterant from '../assets/eggsterant.png';
+import eggsterant_v3 from '../assets/eggsterant-v3.png';
 import tradingIndicator from '../assets/trading-indicator.png';
 
 const projects = [
+    {
+        name: 'Eggsterant Full-Stack Website',
+        date: 'Aug 2024 — Sep 2024',
+        description: 'Full-stack website with a landing page, authentication and user dashboard with payments, download, gift key redemption and hardware ID reset system.',
+        link: 'https://www.eggsterant.net/',
+        stack: [
+            'C#', 'JavaScript', 'ASP.NET Core', 'EF Core', 'React', 'Tailwind', 'PostgreSQL'
+        ],
+    },
     {
         name: 'Uni Connect',
         date: 'Mar 2025 — May 2025',
         imageLink: uniConnect,
         description: 'An open-source, fully functional forum for students with a clean, user-friendly interface. Users can post text, images, videos, and events, as well as like, save posts, and edit their profiles.',
-        link: 'https://uni-connect.vip/',
         source: 'https://github.com/sunwoo101/Uni-Connect',
         stack: [
             'ASP.NET Core', 'C#', 'JavaScript', 'Tailwind', 'HTML'
@@ -19,11 +27,11 @@ const projects = [
     {
         name: 'Eggsterant V3',
         date: 'Aug 2024 — Sep 2024',
-        imageLink: eggsterant,
-        description: 'A subscription-based game assist tool that automatically clicks characters detected by a color-outline recognition algorithm, used by over 1,000 customers.',
+        imageLink: eggsterant_v3,
+        description: 'A real-time input enhancement tool that automatically clicks characters detected by a color-outline recognition algorithm, used by over 1,000 customers.',
         link: 'https://www.eggsterant.net/',
         stack: [
-            'WinForms', 'C#', 'C++',
+            'C#', 'WinForms',
         ],
     },
     {
@@ -32,17 +40,8 @@ const projects = [
         imageLink: tradingIndicator,
         description: 'An open-source TradingView indicator with over 80,000 views that identifies Smart Money Concept (SMC) levels and sends real-time webhook alerts when key price levels are reached.',
         link: 'https://www.tradingview.com/script/gqiG3j3a-SMC-Indicator-With-Webhook/',
-        source: 'https://www.tradingview.com/script/gqiG3j3a-SMC-Indicator-With-Webhook/',
         stack: [
             'Pine Script'
-        ],
-    },
-    {
-        name: 'Eggsterant Private',
-        date: 'Jun 2025 — Jul 2025',
-        link: 'https://www.eggsterant.net/',
-        stack: [
-            'WinForms', 'C#', 'C++',
         ],
     },
     {
@@ -50,9 +49,18 @@ const projects = [
         date: 'Jul 2025',
         source: 'https://github.com/sunwoo101/dotfiles',
         stack: [
-            'CSS', 'Bash',
+            'Linux', 'CSS', 'Bash',
         ],
     },
+    {
+        name: 'Eggsterant Pro',
+        date: 'Mar 2024 — Apr 2024',
+        link: 'https://www.eggsterant.net/',
+        stack: [
+             'C#', 'WinForms',
+        ],
+    },
+
     {
         name: 'SSH Client',
         date: 'Oct 2020 — Sep 2021',

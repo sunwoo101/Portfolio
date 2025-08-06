@@ -2,7 +2,7 @@ import SkillTag from "../Components/SkillTag";
 import EducationTag from "../Components/EducationTag";
 
 const skills = [
-    'ASP.NET Core', 'React', 'Tailwind', 'WinForms', 'C#', 'JavaScript', 'Python', 'C++', 'CSS', 'HTML', 'Pine Script'
+    'C#', 'JavaScript', 'Python', 'ASP.NET Core', 'EF Core', 'React', 'Tailwind', 'PostgreSQL', 'WinForms', 'Linux', 'NeoVim', 'CSS', 'HTML', 'Pine Script'
 ];
 
 const education = [
@@ -17,7 +17,7 @@ const education = [
         graduation: 'Mar 2025 — May 2025 • Withdrawn (Transfer to UTS)',
     },
     {
-        degree: 'Certificate IV in Information Technology',
+        degree: 'Certificate IV in Information Technology (Gaming Development)',
         uni: 'TAFE NSW',
         graduation: 'Feb 2024 — Jun 2024',
     },

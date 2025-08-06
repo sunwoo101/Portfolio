@@ -12,7 +12,7 @@ function Job({ job, index }) {
                         <p className="text-palette-text text-lg group-hover:text-palette-text transition duration-200 leading-none">{job.date}</p>
                     </div>
 
-                    <p className="text-palette-text text-sm leading-relaxed py-2">
+                    <p className="text-palette-text text-sm leading-relaxed p-4">
                         {job.description}
                     </p>
 
