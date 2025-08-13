@@ -3,7 +3,7 @@ import Job from "../Components/Job";
 const jobs = [
     {
         name: 'Eggsterant',
-        position: 'Senior Full-Stack Software Engineer',
+        position: 'Full-Stack Software Engineer',
         location: 'Sydney, Australia (Remote)',
         date: 'Jun 2022 — Present',
         description: 'Built a full-stack platform with React and ASP.NET Core for 1,500+ users, featuring secure auth, license management, and obfuscated executables. Developed WinForms input tools, managed CI/CD on a VPS, and led remote support to improve onboarding and operations.',
