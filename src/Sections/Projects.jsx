@@ -7,7 +7,7 @@ import tradingIndicator from '../assets/trading-indicator.png';
 const projects = [
     {
         name: 'Eggsterant Full-Stack Website',
-        date: 'Aug 2024 — Sep 2024',
+        date: 'May 2025 — Aug 2025',
         description: 'Full-stack website with a landing page, authentication and user dashboard with payments, download, gift key redemption and hardware ID reset system.',
         link: 'https://www.eggsterant.net/',
         stack: [
@@ -57,7 +57,7 @@ const projects = [
         date: 'Mar 2024 — Apr 2024',
         link: 'https://www.eggsterant.net/',
         stack: [
-             'C#', 'WinForms',
+            'C#', 'WinForms',
         ],
     },
 
