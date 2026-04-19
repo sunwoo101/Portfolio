@@ -1,9 +1,7 @@
-function TechTag({text}) {
-    return (
-        <p aria-label={`Technology: ${text}`} className="text-palette-text text-xs bg-palette-primary p-[4px] border border-palette-secondary shadow-md shadow-palette-border-glow/60 rounded-[6px] hover:-translate-y-1 transition duration-200 ease-in-out select-none cursor-default leading-none">
-            {text}
-        </p>
-    );
+export default function TechTag({ label }) {
+  return (
+    <span className="px-2.5 py-1 text-xs font-medium rounded bg-palette-tag border border-palette-border text-palette-secondary hover:border-palette-accent hover:text-palette-accent transition-colors cursor-default">
+      {label}
+    </span>
+  );
 }
-
-export default TechTag;

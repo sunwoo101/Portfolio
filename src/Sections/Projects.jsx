@@ -1,111 +1,181 @@
-import Project from '../Components/Project';
-
-import uniConnect from '../assets/uni-connect.vip.png';
-import eggsterant_v3 from '../assets/eggsterant-v3.png';
-import tradingIndicator from '../assets/trading-indicator.png';
+import SectionTitle from "../Components/SectionTitle";
+import TechTag from "../Components/TechTag";
+import labourLog from "../assets/labourlog.png";
+import eggsterantWebsite from "../assets/eggsterant-website.png";
+import uniConnect from "../assets/uni-connect.png";
+import eggsterantV3 from "../assets/eggsterant-v3.png";
+import tradingIndicator from "../assets/trading-indicator.png";
+import archLinux from "../assets/arch-linux-dotfiles.png";
 
 const projects = [
-    {
-        name: 'Eggsterant Full-Stack Website',
-        date: 'May 2025 — Aug 2025',
-        description: 'Full-stack website with a landing page, authentication and user dashboard with payments, download, gift key redemption and hardware ID reset system.',
-        link: 'https://www.eggsterant.net/',
-        stack: [
-            'C#', 'JavaScript', 'ASP.NET Core', 'EF Core', 'React', 'Tailwind', 'PostgreSQL'
-        ],
-    },
-    {
-        name: 'Uni Connect',
-        date: 'Mar 2025 — May 2025',
-        imageLink: uniConnect,
-        description: 'An open-source, fully functional forum for students with a clean, user-friendly interface. Users can post text, images, videos, and events, as well as like, save posts, and edit their profiles.',
-        source: 'https://github.com/sunwoo101/Uni-Connect',
-        stack: [
-            'ASP.NET Core', 'C#', 'JavaScript', 'Tailwind', 'HTML'
-        ],
-    },
-    {
-        name: 'Eggsterant V3',
-        date: 'Aug 2024 — Sep 2024',
-        imageLink: eggsterant_v3,
-        description: 'A real-time input enhancement tool that automatically clicks characters detected by a color-outline recognition algorithm, used by over 1,000 customers.',
-        link: 'https://www.eggsterant.net/',
-        stack: [
-            'C#', 'WinForms',
-        ],
-    },
-    {
-        name: 'Trading Indicator',
-        date: 'Jul 2024 — Sep 2024',
-        imageLink: tradingIndicator,
-        description: 'An open-source TradingView indicator with over 80,000 views that identifies Smart Money Concept (SMC) levels and sends real-time webhook alerts when key price levels are reached.',
-        link: 'https://www.tradingview.com/script/gqiG3j3a-SMC-Indicator-With-Webhook/',
-        stack: [
-            'Pine Script'
-        ],
-    },
-    {
-        name: 'Arch Linux Dotfiles',
-        date: 'Jul 2025',
-        source: 'https://github.com/sunwoo101/dotfiles',
-        stack: [
-            'Linux', 'CSS', 'Bash',
-        ],
-    },
-    {
-        name: 'Eggsterant Pro',
-        date: 'Mar 2024 — Apr 2024',
-        link: 'https://www.eggsterant.net/',
-        stack: [
-            'C#', 'WinForms',
-        ],
-    },
-
-    {
-        name: 'SSH Client',
-        date: 'Oct 2020 — Sep 2021',
-        source: 'https://github.com/sunwoo101/SSH-Client-V2',
-        stack: [
-            'Python',
-        ],
-    },
-    {
-        name: 'FX Journal',
-        date: 'Oct 2023',
-        source: 'https://github.com/sunwoo101/FxJournal',
-        stack: [
-            'C#', 'WinForms',
-        ],
-    },
-    {
-        name: 'Simple RPG',
-        date: 'Jul 2024 - Aug 2024',
-        source: 'https://github.com/sunwoo101/3D-Simple-RPG',
-        stack: [
-            'C#', 'Unity',
-        ],
-    },
-
+  {
+    title: "LabourLog",
+    dates: "Mar 2026 — Present",
+    image: labourLog,
+    description:
+      "Multi-tenant SaaS for Australian metal fabrication workshops. QR code job tracking, a live manager dashboard, and a React Native mobile app on the App Store and Google Play.",
+    stack: [
+      "C#",
+      "ASP.NET Core",
+      "EF Core",
+      "PostgreSQL",
+      "React",
+      "React Native",
+      "Expo",
+      "Tailwind",
+      "Docker",
+    ],
+    link: "https://www.labourlog.com.au",
+  },
+  {
+    title: "Eggsterant Full-Stack Website",
+    dates: "May 2025 — Aug 2025",
+    image: eggsterantWebsite,
+    description:
+      "Full-stack website with a landing page, authentication and user dashboard with payments, download, gift key redemption and hardware ID reset system.",
+    stack: ["C#", "JavaScript", "ASP.NET Core", "EF Core", "React", "Tailwind", "PostgreSQL"],
+    link: "https://www.eggsterant.net/",
+  },
+  {
+    title: "Uni Connect",
+    dates: "Mar 2025 — May 2025",
+    image: uniConnect,
+    description:
+      "An open-source, fully functional forum for students with a clean, user-friendly interface. Users can post text, images, videos, and events, as well as like, save posts, and edit their profiles.",
+    stack: ["ASP.NET Core", "C#", "JavaScript", "Tailwind", "HTML"],
+    source: "https://github.com/sunwoo101/Uni-Connect",
+  },
+  {
+    title: "Eggsterant V3",
+    dates: "Aug 2024 — Sep 2024",
+    image: eggsterantV3,
+    description:
+      "A real-time input enhancement tool that automatically clicks characters detected by a color-outline recognition algorithm, used by over 1,000 customers.",
+    stack: ["C#", "WinForms"],
+    link: "https://www.eggsterant.net/",
+  },
+  {
+    title: "Trading Indicator",
+    dates: "Jul 2024 — Sep 2024",
+    image: tradingIndicator,
+    description:
+      "An open-source TradingView indicator with over 80,000 views that identifies Smart Money Concept (SMC) levels and sends real-time webhook alerts when key price levels are reached.",
+    stack: ["Pine Script"],
+    link: "https://www.tradingview.com/script/gqiG3j3a-SMC-Indicator-With-Webhook/",
+  },
+  {
+    title: "Arch Linux Dotfiles",
+    dates: "Jul 2025",
+    image: archLinux,
+    description: "Configuration files for a custom Arch Linux setup running Hyprland as the Wayland compositor.",
+    stack: ["Linux", "CSS", "Bash"],
+    source: "https://github.com/sunwoo101/dotfiles",
+  },
+  {
+    title: "Eggsterant Pro",
+    dates: "Mar 2024 — Apr 2024",
+    description:
+      "A real-time mouse-positioning tool that moves the cursor to characters detected by a color-outline recognition algorithm, used commercially by over 1,000 customers.",
+    stack: ["C#", "WinForms"],
+    link: "https://www.eggsterant.net/",
+  },
+  {
+    title: "SSH Client",
+    dates: "Oct 2020 — Sep 2021",
+    description: "A GUI tool for managing and connecting to VPS servers with one click, storing credentials so there's no need to type a username and password each time. Supports file transfer via SFTP.",
+    stack: ["Python"],
+    source: "https://github.com/sunwoo101/SSH-Client-V2",
+  },
+  {
+    title: "FX Journal",
+    dates: "Oct 2023",
+    description: "A WinForms desktop app for logging and reviewing forex trades.",
+    stack: ["C#", "WinForms"],
+    source: "https://github.com/sunwoo101/FxJournal",
+  },
+  {
+    title: "Simple RPG",
+    dates: "Jul 2024 — Aug 2024",
+    description: "A 3D RPG game built in Unity with monster encounters and a boss fight.",
+    stack: ["C#", "Unity"],
+    source: "https://github.com/sunwoo101/3D-Simple-RPG",
+  },
 ];
 
-function Projects() {
-    return (
-        <section aria-labelledby="projects-heading" aria-label="Project showcase section" id="projects" className="w-full flex flex-col justify-center items-center leading-none">
-            <div className="mx-6 sm:w-xl mt-10 sm:mt-30">
-                <h2 id="projects-heading" className="text-palette-text text-4xl mb-4 leading-none">Projects</h2>
-                <ul aria-label="List of projects" className="flex flex-wrap gap-4 list-none p-0 m-0"> {
-                    projects.map((project, index) => {
-                        return (
-                            <li key={index} className="min-w-full sm:w-auto">
-                                <Project project={project} index={index} />
-                            </li>
-                        )
-                    })
-                }
-                </ul>
-            </div>
-        </section>
-    );
+function ProjectCard({ project }) {
+  return (
+    <div className="rounded-xl border border-palette-border bg-palette-primary flex flex-col hover:border-palette-muted transition-colors overflow-hidden">
+      {project.image && (
+        <div className="w-full overflow-hidden bg-palette-background border-b border-palette-border">
+          <img
+            src={project.image}
+            alt={project.title}
+            className="w-full h-auto"
+          />
+        </div>
+      )}
+
+      <div className="p-6 flex flex-col flex-1">
+        <div className="flex items-start justify-between gap-3 mb-2">
+          <h3 className="text-palette-text font-semibold leading-snug">
+            {project.title}
+          </h3>
+          <div className="flex items-center gap-3 shrink-0 mt-0.5">
+            {project.source && (
+              <a
+                href={project.source}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Source code"
+                className="text-palette-secondary hover:text-palette-text transition-colors"
+              >
+                <i className="fa-brands fa-github text-base" />
+              </a>
+            )}
+            {project.link && (
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View project"
+                className="text-palette-secondary hover:text-palette-text transition-colors"
+              >
+                <i className="fa-solid fa-arrow-up-right-from-square text-sm" />
+              </a>
+            )}
+          </div>
+        </div>
+
+        <p className="text-palette-secondary text-xs mb-3">{project.dates}</p>
+
+        {project.description && (
+          <p className="text-palette-secondary text-sm leading-relaxed mb-4 flex-1">
+            {project.description}
+          </p>
+        )}
+
+        <div className="flex flex-wrap gap-1.5 mt-auto pt-2">
+          {project.stack.map((tech) => (
+            <TechTag key={tech} label={tech} />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default Projects;
+export default function Projects() {
+  return (
+    <section id="projects" className="py-24 bg-palette-primary">
+      <div className="max-w-5xl mx-auto px-6">
+        <SectionTitle>Projects</SectionTitle>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {projects.map((project) => (
+            <ProjectCard key={project.title} project={project} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

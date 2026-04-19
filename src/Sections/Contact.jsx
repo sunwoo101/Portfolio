@@ -1,34 +1,67 @@
-function Contact() {
-    return (
-        <section aria-labelledby="contact-heading" id="contact" className="min-w-full flex flex-col justify-center items-center mb-36 leading-none">
-            <div className="mx-6 sm:w-xl mt-10 sm:mt-30">
-                <h2 id="contact-heading" className="text-palette-text text-4xl mb-4 leading-none">Contact</h2>
-                <div className="bg-palette-secondary/20 border border-palette-text/50 shadow-md shadow-palette-border-glow/60 rounded-[10px] w-full flex flex-col justify-center items-center py-5 px-5">
-                    <div className="flex flex-col w-full gap-4">
-                        <p className="text-palette-text text-center text-sm leading-relaxed">
-                            I'm available for internships and part-time roles in Sydney, Australia, freelance work, or simply to connect.
-                        </p>
+import SectionTitle from "../Components/SectionTitle";
 
-                        <div className="flex flex-col gap-4">
-                            <h3 className="sr-only">Contact Methods</h3>
-                            <div className="flex items-center gap-2">
-                                <i className="fas fa-envelope text-palette-text" aria-label="Email Icon" aria-hidden="true" />
-                                <a href="mailto:sun.kim101@outlook.com" className="text-palette-text hover:underline">sun.kim101@outlook.com</a>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <i className="fab fa-linkedin text-palette-text" aria-label="LinkedIn Icon" aria-hidden="true" />
-                                <a href="https://linkedin.com/in/sunwoo101" target="_blank" rel="noopener noreferrer" className="text-palette-text hover:underline">linkedin.com/in/sunwoo101</a>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <i className="fab fa-github text-palette-text" aria-label="GitHub Icon" aria-hidden="true" />
-                                <a href="https://github.com/sunwoo101" target="_blank" rel="noopener noreferrer" className="text-palette-text hover:underline">github.com/sunwoo101</a>
-                            </div>
-                        </div>
-                    </div>
+const contacts = [
+  {
+    label: "Email",
+    value: "sun.kim101@outlook.com",
+    href: "mailto:sun.kim101@outlook.com",
+    icon: "fa-solid fa-envelope",
+  },
+  {
+    label: "GitHub",
+    value: "github.com/sunwoo101",
+    href: "https://github.com/sunwoo101",
+    icon: "fa-brands fa-github",
+  },
+  {
+    label: "LinkedIn",
+    value: "linkedin.com/in/sunwoo101",
+    href: "https://linkedin.com/in/sunwoo101",
+    icon: "fa-brands fa-linkedin",
+  },
+];
+
+export default function Contact() {
+  return (
+    <section id="contact" className="py-24 bg-palette-background">
+      <div className="max-w-5xl mx-auto px-6">
+        <SectionTitle>Contact</SectionTitle>
+
+        <div className="grid md:grid-cols-2 gap-10">
+          <div>
+            <p className="text-palette-secondary text-lg leading-relaxed">
+              I'm open to new opportunities, collaborations, or just a chat.
+              Feel free to reach out via email or any of the links below.
+            </p>
+            <p className="text-palette-secondary text-sm mt-4">
+              <i className="fa-solid fa-location-dot mr-2 text-palette-accent" />
+              Sydney, Australia
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-4">
+            {contacts.map(({ label, value, href, icon }) => (
+              <a
+                key={label}
+                href={href}
+                target={href.startsWith("mailto") ? undefined : "_blank"}
+                rel={href.startsWith("mailto") ? undefined : "noopener noreferrer"}
+                className="flex items-center gap-4 p-4 rounded-xl border border-palette-border bg-palette-primary hover:border-palette-accent group transition-colors"
+              >
+                <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-palette-background border border-palette-border text-palette-secondary group-hover:text-palette-accent group-hover:border-palette-accent transition-colors">
+                  <i className={`${icon} text-base`} />
                 </div>
-            </div>
-        </section>
-    );
+                <div>
+                  <p className="text-palette-secondary text-xs mb-0.5">{label}</p>
+                  <p className="text-palette-text text-sm font-medium group-hover:text-palette-accent transition-colors">
+                    {value}
+                  </p>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
-
-export default Contact;

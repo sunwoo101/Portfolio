@@ -1,19 +1,41 @@
-function Footer() {
-    return (
-        <footer className="flex justify-center items-center">
-            <div className="w-max flex fixed bottom-10 justify-center items-center gap-4 bg-white/5 border-palette-secondary backdrop-blur-sm shadow-md shadow-palette-border-glow/60 border p-4 rounded-[10px] leading-none z-50">
-                <a aria-label="LinkedIn profile" className="hover:-translate-y-1 transition duration-200 ease-in-out select-none" href="https://linkedin.com/in/sunwoo101" target="_blank" rel="noopener noreferrer">
-                    <i className="fab fa-linkedin text-palette-text text-3xl"></i>
-                </a>
-                <a aria-label="GitHub profile" className="hover:-translate-y-1 transition duration-200 ease-in-out select-none" href="https://github.com/sunwoo101" target="_blank" rel="noopener noreferrer">
-                    <i className="fab fa-github text-palette-text text-3xl"></i>
-                </a>
-                <a aria-label="Email address" className="hover:-translate-y-1 transition duration-200 ease-in-out select-none" href="mailto:sun.kim101@outlook.com">
-                    <i className="fas fa-envelope text-palette-text text-3xl"></i>
-                </a>
-            </div>
-        </footer>
-    )
-}
+export default function Footer() {
+  const year = new Date().getFullYear();
 
-export default Footer;
+  return (
+    <footer className="border-t border-palette-border bg-palette-primary py-8 px-6">
+      <div className="max-w-5xl mx-auto flex flex-wrap items-center justify-between gap-4">
+        <p className="text-palette-secondary text-sm">
+          &copy; {year} Sun Woo Kim
+        </p>
+
+        <div className="flex items-center gap-6">
+          <a
+            href="https://github.com/sunwoo101"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            className="text-palette-secondary hover:text-palette-text transition-colors text-sm"
+          >
+            <i className="fa-brands fa-github text-base" />
+          </a>
+          <a
+            href="https://linkedin.com/in/sunwoo101"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            className="text-palette-secondary hover:text-palette-text transition-colors text-sm"
+          >
+            <i className="fa-brands fa-linkedin text-base" />
+          </a>
+          <a
+            href="mailto:sun.kim101@outlook.com"
+            aria-label="Email"
+            className="text-palette-secondary hover:text-palette-text transition-colors text-sm"
+          >
+            <i className="fa-solid fa-envelope text-base" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  );
+}

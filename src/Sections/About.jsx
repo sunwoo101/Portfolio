@@ -1,70 +1,85 @@
-import SkillTag from "../Components/SkillTag";
-import EducationTag from "../Components/EducationTag";
+import SectionTitle from "../Components/SectionTitle";
 
-const skills = [
-    'C#', 'JavaScript', 'Python', 'ASP.NET Core', 'EF Core', 'React', 'Tailwind', 'PostgreSQL', 'WinForms', 'Linux', 'NeoVim', 'CSS', 'HTML', 'Pine Script'
+const row1 = [
+  { name: "C#",          icon: "devicon-csharp-plain" },
+  { name: "JavaScript",  icon: "devicon-javascript-plain" },
+  { name: "Python",      icon: "devicon-python-plain" },
+  { name: "React",       icon: "devicon-react-original" },
+  { name: "Tailwind",    icon: "devicon-tailwindcss-plain" },
+  { name: "CSS",         icon: "devicon-css3-plain" },
+  { name: "HTML",        icon: "devicon-html5-plain" },
 ];
 
-const education = [
-    {
-        degree: 'Bachelor of Information Technology (Enterprise Software Development)',
-        uni: 'UTS',
-        graduation: 'Jul 2025 — Dec 2027 • Expected',
-    },
-    {
-        degree: 'Diploma of Information Technology',
-        uni: 'UTS College',
-        graduation: 'Mar 2025 — May 2025 • Withdrawn (Transfer to UTS)',
-    },
-    {
-        degree: 'Certificate IV in Information Technology (Gaming Development)',
-        uni: 'TAFE NSW',
-        graduation: 'Feb 2024 — Jun 2024',
-    },
+const row2 = [
+  { name: "ASP.NET Core", icon: "devicon-dotnetcore-plain" },
+  { name: "EF Core",      icon: "devicon-dotnetcore-plain" },
+  { name: "PostgreSQL",   icon: "devicon-postgresql-plain" },
+  { name: "Linux",        icon: "devicon-linux-plain" },
+  { name: "NeoVim",       icon: "devicon-neovim-plain" },
+  { name: "WinForms",     icon: "devicon-dotnetcore-plain" },
+  { name: "Pine Script",  icon: null },
 ];
 
-function About() {
-    return (
-        <section aria-labelledby="about-heading" id="about" className="w-full flex flex-col justify-center items-center leading-none">
-            <div className="mx-6 sm:w-xl mt-10 sm:mt-30">
-                <h2 id="about-heading" className="text-palette-text text-4xl mb-4 leading-none">About</h2>
-                <div className="bg-palette-secondary/20 border border-palette-secondary shadow-md shadow-palette-border-glow/60 rounded-[10px] w-full flex flex-col justify-center items-center py-5 px-5 gap-10">
-                    <div className="w-full">
-                        <h3 className="text-palette-text text-2xl mb-2 leading-none">Intro</h3>
-                        <p className="text-palette-text leading-relaxed">I am a software engineer in Sydney, Australia. I specialize in .NET and React, and enjoy developing side projects for fun and learning.</p>
-                    </div>
-
-                    <div className="w-full">
-                        <h3 className="text-palette-text text-2xl mb-2 leading-none">Skills</h3>
-                        <ul aria-label="Technology stack" className="flex flex-wrap gap-2 list-none p-0 m-0"> {
-                            skills.map((skill, index) => {
-                                return (
-                                    <li key={index}>
-                                        <SkillTag text={skill} />
-                                    </li>
-                                )
-                            })
-                        }
-                        </ul>
-                    </div>
-
-                    <div className="w-full">
-                        <h3 className="text-palette-text text-2xl mb-2 leading-none">Education</h3>
-                        <ul className="flex flex-wrap gap-2 list-none p-0 m-0"> {
-                            education.map((education, index) => {
-                                return (
-                                    <li key={index} className="min-w-full">
-                                        <EducationTag education={education} />
-                                    </li>
-                                )
-                            })
-                        }
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-    );
+function SkillCard({ name, icon }) {
+  return (
+    <div className="flex items-center gap-2.5 px-4 py-3 rounded-xl border border-palette-border bg-palette-background hover:border-palette-accent group transition-colors cursor-default shrink-0">
+      {icon ? (
+        <i className={`${icon} text-xl text-palette-secondary group-hover:text-palette-accent transition-colors`} />
+      ) : (
+        <i className="fa-solid fa-code text-sm text-palette-secondary group-hover:text-palette-accent transition-colors" />
+      )}
+      <span className="text-palette-secondary group-hover:text-palette-accent text-sm font-medium whitespace-nowrap transition-colors">
+        {name}
+      </span>
+    </div>
+  );
 }
 
-export default About;
+function MarqueeRow({ skills, reverse = false }) {
+  return (
+    <div className="overflow-hidden marquee-fade">
+      <div
+        className={`flex w-max ${reverse ? "animate-marquee-right" : "animate-marquee-left"} hover:[animation-play-state:paused]`}
+      >
+        {[0, 1, 2, 3].map((copy) => (
+          <div key={copy} className="flex gap-3 pr-3">
+            {skills.map((skill, i) => (
+              <SkillCard key={i} {...skill} />
+            ))}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default function About() {
+  return (
+    <section id="about" className="py-24 bg-palette-primary">
+      <div className="max-w-5xl mx-auto px-6">
+        <SectionTitle>About</SectionTitle>
+
+        <div className="mb-14 max-w-2xl">
+          <p className="text-palette-secondary text-lg leading-relaxed">
+            I am a software engineer in Sydney, Australia. I specialise in{" "}
+            <span className="text-palette-text font-medium">.NET</span> and{" "}
+            <span className="text-palette-text font-medium">React</span>, and
+            enjoy developing side projects for fun and learning.
+          </p>
+          <p className="text-palette-secondary text-lg leading-relaxed mt-4">
+            Currently studying a{" "}
+            <span className="text-palette-text font-medium">
+              Bachelor of Information Technology
+            </span>{" "}
+            at UTS while building{" "}
+            <span className="text-palette-text font-medium">LabourLog</span>.
+          </p>
+        </div>
+        <div className="flex flex-col gap-3">
+          <MarqueeRow skills={row1} />
+          <MarqueeRow skills={row2} reverse />
+        </div>
+      </div>
+    </section>
+  );
+}

@@ -1,20 +1,24 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-function NotFound() {
-    return (
-        <div className="min-h-screen flex flex-col justify-center items-center text-center px-4 bg-palette-background">
-            <h1 className="text-palette-text text-6xl font-bold mb-4">404</h1>
-            <p className="text-palette-text text-xl mb-6">
-                Oops! The page you're looking for doesn't exist.
-            </p>
-            <Link
-                to="/"
-                className="text-palette-text p-4 bg-palette-primary hover:bg-palette-secondary/50 border border-palette-secondary shadow-md shadow-palette-border-glow/60 rounded-[6px] transition duration-200 ease-in-out select-none leading-none"
-            >
-                Go Back Home
-            </Link>
-        </div>
-    );
+export default function NotFound() {
+  return (
+    <main className="min-h-screen flex flex-col items-center justify-center px-6 bg-palette-background">
+      <p className="text-palette-accent text-sm font-medium tracking-widest uppercase mb-4">
+        404
+      </p>
+      <h1 className="text-5xl font-bold text-palette-text mb-4">
+        Page not found
+      </h1>
+      <p className="text-palette-secondary mb-10 text-center max-w-sm">
+        The page you're looking for doesn't exist or has been moved.
+      </p>
+      <Link
+        to="/"
+        className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-palette-accent text-white font-medium text-sm hover:opacity-90 transition-opacity"
+      >
+        <i className="fa-solid fa-arrow-left text-xs" />
+        Back to Home
+      </Link>
+    </main>
+  );
 }
-
-export default NotFound;

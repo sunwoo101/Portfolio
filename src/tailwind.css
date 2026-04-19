@@ -1,10 +1,44 @@
 @import "tailwindcss";
 
 @theme {
-    --color-palette-text: rgb(255, 255, 255);
-    --color-palette-background: rgb(0, 0, 0);
-    --color-palette-primary: rgb(29, 29, 29);
-    --color-palette-secondary: rgb(97, 97, 97);
-    --color-palette-accent: rgb(144, 99, 55);
-    --color-palette-border-glow: rgb(255, 0, 0);
+  --color-palette-text: rgb(230, 230, 230);
+  --color-palette-background: rgb(8, 8, 8);
+  --color-palette-primary: rgb(16, 16, 16);
+  --color-palette-secondary: rgb(118, 118, 118);
+  --color-palette-accent: rgb(59, 130, 246);
+  --color-palette-border: rgb(36, 36, 36);
+  --color-palette-tag: rgb(22, 22, 22);
+  --color-palette-muted: rgb(42, 42, 42);
+
+  --animate-marquee-left: marquee-left 35s linear infinite;
+  --animate-marquee-right: marquee-right 35s linear infinite;
+}
+
+@keyframes marquee-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-25%); }
+}
+
+@keyframes marquee-right {
+  from { transform: translateX(-25%); }
+  to { transform: translateX(0); }
+}
+
+@layer base {
+  body {
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: rgba(59, 130, 246, 0.3);
+  }
+}
+
+@layer utilities {
+  .marquee-fade {
+    mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  }
 }
