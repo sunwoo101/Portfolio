@@ -6,6 +6,7 @@ import uniConnect from "../assets/uni-connect.png";
 import eggsterantV3 from "../assets/eggsterant-v3.png";
 import tradingIndicator from "../assets/trading-indicator.png";
 import archLinux from "../assets/arch-linux-dotfiles.png";
+import livepaper from "../assets/livepaper.png";
 
 const projects = [
   {
@@ -26,6 +27,15 @@ const projects = [
       "Docker",
     ],
     link: "https://www.labourlog.com.au",
+  },
+  {
+    title: "Livepaper",
+    dates: "Apr 2026 — Present",
+    image: livepaper,
+    description:
+      "A desktop app for managing animated wallpapers on Wayland compositors. Browse and download wallpapers from online sources or a local Wallpaper Engine library, applied via mpvpaper. Supports shuffle, continuous playback, and auto-start on any Wayland compositor with startup script support.",
+    stack: ["C#"],
+    source: "https://github.com/sunwoo101/livepaper",
   },
   {
     title: "Eggsterant Full-Stack Website",
@@ -106,11 +116,11 @@ function ProjectCard({ project }) {
   return (
     <div className="rounded-xl border border-palette-border bg-palette-primary flex flex-col hover:border-palette-muted transition-colors overflow-hidden">
       {project.image && (
-        <div className="w-full overflow-hidden bg-palette-background border-b border-palette-border">
+        <div className="w-full h-48 overflow-hidden bg-palette-background border-b border-palette-border">
           <img
             src={project.image}
             alt={project.title}
-            className="w-full h-auto"
+            className="w-full h-full object-cover"
           />
         </div>
       )}
