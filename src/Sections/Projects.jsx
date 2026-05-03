@@ -38,6 +38,24 @@ const projects = [
     source: "https://github.com/sunwoo101/livepaper",
   },
   {
+    title: "dotnet-rest-api",
+    dates: "Mar 2026",
+    icon: "devicon-csharp-plain colored",
+    description:
+      "A reference guide to REST API design in .NET covering CRUD operations, RESTful URI patterns, HTTP methods, request parameter types, authentication endpoint patterns, and status codes.",
+    stack: ["C#", "ASP.NET Core"],
+    source: "https://github.com/sunwoo101/dotnet-rest-api",
+  },
+  {
+    title: "dotnet-clean-architecture",
+    dates: "Mar 2026",
+    icon: "devicon-csharp-plain colored",
+    description:
+      "A reference implementation of Clean Architecture in .NET with layered separation across API, Application, Domain, and Infrastructure. Demonstrates the Repository pattern, Result pattern, and Dependency Injection setup.",
+    stack: ["C#", "ASP.NET Core", "EF Core"],
+    source: "https://github.com/sunwoo101/dotnet-clean-architecture",
+  },
+  {
     title: "Eggsterant Full-Stack Website",
     dates: "May 2025 — Aug 2025",
     image: eggsterantWebsite,
@@ -84,6 +102,7 @@ const projects = [
   {
     title: "Eggsterant Pro",
     dates: "Mar 2024 — Apr 2024",
+    icon: "devicon-csharp-plain colored",
     description:
       "A real-time mouse-positioning tool that moves the cursor to characters detected by a color-outline recognition algorithm, used commercially by over 1,000 customers.",
     stack: ["C#", "WinForms"],
@@ -92,6 +111,7 @@ const projects = [
   {
     title: "SSH Client",
     dates: "Oct 2020 — Sep 2021",
+    icon: "devicon-python-plain colored",
     description: "A GUI tool for managing and connecting to VPS servers with one click, storing credentials so there's no need to type a username and password each time. Supports file transfer via SFTP.",
     stack: ["Python"],
     source: "https://github.com/sunwoo101/SSH-Client-V2",
@@ -99,6 +119,7 @@ const projects = [
   {
     title: "FX Journal",
     dates: "Oct 2023",
+    icon: "devicon-csharp-plain colored",
     description: "A WinForms desktop app for logging and reviewing forex trades.",
     stack: ["C#", "WinForms"],
     source: "https://github.com/sunwoo101/FxJournal",
@@ -106,6 +127,7 @@ const projects = [
   {
     title: "Simple RPG",
     dates: "Jul 2024 — Aug 2024",
+    icon: "devicon-unity-plain colored",
     description: "A 3D RPG game built in Unity with monster encounters and a boss fight.",
     stack: ["C#", "Unity"],
     source: "https://github.com/sunwoo101/3D-Simple-RPG",
@@ -115,7 +137,7 @@ const projects = [
 function ProjectCard({ project }) {
   return (
     <div className="rounded-xl border border-palette-border bg-palette-primary flex flex-col hover:border-palette-muted transition-colors overflow-hidden">
-      {project.image && (
+      {project.image ? (
         <div className="w-full h-48 overflow-hidden bg-palette-background border-b border-palette-border">
           <img
             src={project.image}
@@ -123,7 +145,11 @@ function ProjectCard({ project }) {
             className="w-full h-full object-cover"
           />
         </div>
-      )}
+      ) : project.icon ? (
+        <div className="w-full h-48 flex items-center justify-center bg-palette-background border-b border-palette-border">
+          <i className={`${project.icon} text-7xl`} />
+        </div>
+      ) : null}
 
       <div className="p-6 flex flex-col flex-1">
         <div className="flex items-start justify-between gap-3 mb-2">

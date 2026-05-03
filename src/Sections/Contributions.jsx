@@ -26,7 +26,7 @@ export default function Contributions() {
   return (
     <section className="py-24 bg-palette-primary">
       <div className="max-w-5xl mx-auto px-6">
-        <SectionTitle>Open Source</SectionTitle>
+        <SectionTitle>Open Source Contributions</SectionTitle>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           {contributions.map((contrib) => (
